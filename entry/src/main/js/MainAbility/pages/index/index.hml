@@ -1,0 +1,23 @@
+<element name='neutheme' src='hmos-neumorphism/theme/theme.hml'></element>
+<element name='neunavbar' src='hmos-neumorphism/navbar/navbar.hml'></element>
+
+<neutheme class="container" theme="" color="">
+    <text class='title'>
+        Navbar Without Icons
+    </text>
+    <neunavbar width="300px" height="60px" border="50px" @right-event="buttonClick" @middle-event="buttonClick"
+               @left-event="buttonClick">
+        <text slot="first">Recent</text>
+        <text slot="second">Home</text>
+        <text slot="third">Back</text>
+    </neunavbar>
+    <text class='title'>
+        Navbar With Icons
+    </text>
+    <neunavbar width="300px" height="60px" border="50px" @right-event="buttonClick" @middle-event="buttonClick"
+               @left-event="buttonClick">
+        <image slot="first" src="common/recent.png" style="width : 30px; height : 30px;"></image>
+        <image slot="second" src="common/home.png" style="width : 30px; height : 30px;"></image>
+        <image slot="third" src="common/return.png" style="width : 30px; height : 30px;"></image>
+    </neunavbar>
+</neutheme>
